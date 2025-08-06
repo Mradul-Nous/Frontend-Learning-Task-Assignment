@@ -4,6 +4,11 @@
 // •	Use arrow functions for at least two operations
 
 
+//IIfe function 
+
+(()=>{
+    console.log("Hi, I am a IIfe function ")
+})()
 
 function calculate(a,b,operation){
     function add(){ console.log(a+b)}         //function declaration
