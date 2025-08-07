@@ -34,14 +34,13 @@ let student_details=[{Name:"chatGpt",marks:70,passed:true},
 
 //function to update the student marks and other details
 
-student_details=student_details.map(update_marks)
+student_details.forEach(student => update_marks(student));
 
 function update_marks(student){
     let new_marks=Math.floor(Math.random()*100)+1;
-    if(new_marks<34) student.passed=false
-    else student.passed=true;
+    student.passed=new_marks>=34;
     student.marks=new_marks
-    return { Name:student.Name,
+    return { ...student,                   //using spread operator 
       marks:student.marks,
     passed:student.passed}
    
