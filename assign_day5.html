@@ -1,0 +1,101 @@
+<!-- Micro Assignment: To-Do List App (Basic)
+•	Create input and “Add Task” button
+•	On click, add task to a list
+•	Each item gets a "Delete" button
+•	Clicking delete removes item from the DOM
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task List</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #6b6bf7, #97ec97, #ec7d7d);
+      background-size: 300% 300%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .items {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 400px;
+    }
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    input {
+      flex: 1;
+      border: 2px solid #ddd;
+    }
+    button {
+      background: #6b6bf7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .items_list_div div {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    }
+    .items_list_div button {
+      background: #ec7d7d;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="input-group">
+      <input id="text_input" type="text" placeholder="Enter a task" />
+      <button id="add_btn">Add Task</button>
+    </div>
+    <div class="items_list_div"></div>
+  </div>
+
+  <script>
+    const addBtn = document.getElementById("add_btn");
+    const textInput = document.getElementById("text_input");
+    const itemsListDiv = document.querySelector(".items_list_div");
+
+    addBtn.addEventListener("click", () => {
+      const value = textInput.value.trim();
+      if (!value) return alert("Please enter a task");
+
+      const taskDiv = document.createElement("div");
+      taskDiv.innerHTML = `<p>${value}</p>`;
+      
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "Delete";
+      deleteBtn.onclick = () => taskDiv.remove();
+
+      taskDiv.appendChild(deleteBtn);
+      itemsListDiv.appendChild(taskDiv);
+      textInput.value = "";
+    });
+  </script>
+</body>
+</html>
