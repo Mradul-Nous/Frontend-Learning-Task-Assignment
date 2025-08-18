@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Persistent Notes App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 360px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      text-align: center;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+    button {
+      background: #4cafef;
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #2196f3;
+    }
+    #errorMsg {
+      color: red;
+      margin: 8px 0;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      background: #f1f1f1;
+      margin: 6px 0;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .deleteBtn {
+      background: #ff5c5c;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+      font-size: 12px;
+    }
+    .deleteBtn:hover {
+      background: #e60000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Notes App</h2>
+    <input type="text" id="noteInput" placeholder="Enter your note">
+    <button onclick="saveNote()">Save</button>
+    <p id="errorMsg"></p>
+    <h3>Saved Notes:</h3>
+    <ul id="notesList"></ul>
+  </div>
+ 
+  <script>
+    // Load notes on page load
+    window.onload = () => {
+      const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+      renderNotes(savedNotes);
+    };
+ 
+    function saveNote() {
+      try {
+        const noteInput = document.getElementById("noteInput");
+        const note = noteInput.value.trim();
+ 
+        if (!note) throw new Error("Note cannot be empty!");
+ 
+        let notes = JSON.parse(localStorage.getItem("notes")) || [];
+        notes.push(note);
+        localStorage.setItem("notes", JSON.stringify(notes));
+ 
+        renderNotes(notes);
+        noteInput.value = ""; // clear input
+        document.getElementById("errorMsg").innerText = "";
+      } catch (err) {
+        document.getElementById("errorMsg").innerText = err.message;
+      }
+    }
+ 
+    function deleteNote(index) {
+      let notes = JSON.parse(localStorage.getItem("notes")) || [];
+      notes.splice(index, 1);
+      localStorage.setItem("notes", JSON.stringify(notes));
+      renderNotes(notes);
+    }
+ 
+    function renderNotes(notes) {
+      const list = document.getElementById("notesList");
+      list.innerHTML = "";
+      notes.forEach((note, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <span>${note}</span>
+          <button class="deleteBtn" onclick="deleteNote(${index})">Delete</button>
+        `;
+        list.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
