@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": 2010,
+    "rating": 8.8,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "year": 2014,
+    "rating": 8.6,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "rating": 9.0,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 4,
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": 8.7,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/The_Matrix.png/250px-The_Matrix.png",
+    "category": "hollywood"
+  },
+  {
+    "id": 5,
+    "title": "Avatar",
+    "year": 2009,
+    "rating": 7.8,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 6,
+    "title": "Gladiator",
+    "year": 2000,
+    "rating": 8.5,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/250px-Gladiator_%282000_film_poster%29.png",
+    "category": "hollywood"
+  },
+  {
+    "id": 7,
+    "title": "Titanic",
+    "year": 1997,
+    "rating": 7.9,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Titanic_%281997_film%29_poster.png/250px-Titanic_%281997_film%29_poster.png",
+    "category": "hollywood"
+  },
+  {
+    "id": 8,
+    "title": "Joker",
+    "year": 2019,
+    "rating": 8.5,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/250px-Joker_%282019_film%29_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 9,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "rating": 8.4,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 10,
+    "title": "Shutter Island",
+    "year": 2010,
+    "rating": 8.2,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/7/76/Shutterislandposter.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 11,
+    "title": "Fight Club",
+    "year": 1999,
+    "rating": 8.8,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 12,
+    "title": "The Godfather",
+    "year": 1972,
+    "rating": 9.2,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 13,
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "rating": 9.0,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/0/03/Godfather_part_ii.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 14,
+    "title": "3 Idiots",
+    "year": 2009,
+    "rating": 8.4,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/3_idiots_poster.jpg/250px-3_idiots_poster.jpg",
+    "category": "bollywood"
+  },
+  {
+    "id": 15,
+    "title": "Dangal",
+    "year": 2016,
+    "rating": 8.3,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Dangal_Poster.jpg/250px-Dangal_Poster.jpg",
+    "category": "bollywood"
+  },
+  {
+    "id": 16,
+    "title": "Lagaan",
+    "year": 2001,
+    "rating": 8.1,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Lagaan.jpg/250px-Lagaan.jpg",
+    "category": "bollywood"
+  },
+  {
+    "id": 17,
+    "title": "Baahubali: The Beginning",
+    "year": 2015,
+    "rating": 8.0,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Baahubali_The_Beginning_poster.jpg/250px-Baahubali_The_Beginning_poster.jpg",
+    "category": "south indian"
+  },
+  {
+    "id": 18,
+    "title": "Baahubali: The Conclusion",
+    "year": 2017,
+    "rating": 8.2,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Baahubali_2_The_Conclusion_poster.jpg/250px-Baahubali_2_The_Conclusion_poster.jpg",
+    "category": "south indian"
+  },
+  {
+    "id": 19,
+    "title": "RRR",
+    "year": 2022,
+    "rating": 8.0,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/RRR_Poster.jpg/250px-RRR_Poster.jpg",
+    "category": "south indian"
+  },
+  {
+    "id": 20,
+    "title": "The Lion King",
+    "year": 1994,
+    "rating": 8.5,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+    "category": "hollywood"
+  },
+  {
+    "id": 21,
+    "title": "My Hero Academia: Two Heroes",
+    "year": 2018,
+    "rating": 8.2,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/My_Hero_Academia_-_Two_Heroes_poster.jpg/250px-My_Hero_Academia_-_Two_Heroes_poster.jpg",
+    "category": "anime"
+  },
+  {
+    "id": 22,
+    "title": "Your Name",
+    "year": 2016,
+    "rating": 8.4,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Your_Name_poster.png/250px-Your_Name_poster.png",
+    "category": "anime"
+  },
+  {
+    "id": 23,
+    "title": "Spirited Away",
+    "year": 2001,
+    "rating": 8.6,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Spirited_Away_Japanese_poster.png/250px-Spirited_Away_Japanese_poster.png",
+    "category": "anime"
+  },
+  {
+    "id": 24,
+    "title": "Piku",
+    "year": 2015,
+    "rating": 7.6,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Piku.jpg/250px-Piku.jpg",
+    "category": "bollywood"
+  },
+  {
+    "id": 25,
+    "title": "KGF: Chapter 1",
+    "year": 2018,
+    "rating": 8.2,
+    "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/K.G.F_Chapter_1_poster.jpg/250px-K.G.F_Chapter_1_poster.jpg",
+    "category": "south indian"
+  }
+]
